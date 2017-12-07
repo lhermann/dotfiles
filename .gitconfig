@@ -1,0 +1,14 @@
+[user]
+    name = Lukas Hermann
+    email = lukher6@web.de
+[alias]
+    co = commit
+    br = branch
+    ch = checkout
+    s = status -s
+    lg = log --oneline --decorate --all --graph
+[color]
+    status = always
+    ui = true
+[core]
+    editor = /usr/bin/vim
