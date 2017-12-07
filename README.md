@@ -4,7 +4,7 @@
 
 Clone this repo into `~/.dotfiles`:
 
-    git clone git@github.com:henrik/dotfiles.git ~/.dotfiles
+    git clone https://github.com/lhermann/dotfiles.git ~/.dotfiles
 
 Then install the dotfiles:
 
