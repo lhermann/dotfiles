@@ -96,8 +96,11 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash/aliases ]; then
-    . ~/.bash/aliases
+if [ -f ~/.bash/aliases.sh ]; then
+    . ~/.bash/aliases.sh
+fi
+if [ -f ~/.bash/env.sh ]; then
+    . ~/.bash/env.sh
 fi
 
 # enable programmable completion features (you don't need to enable
