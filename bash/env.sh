@@ -3,7 +3,7 @@ export EDITOR='vim'
 export HISTCONTROL=ignoredups
 
 # Colors in Vim.
-#export TERM='xterm-256color'
+export TERM='screen-256color'
 
 # Pow shouldn't hide errors in non-ASCII apps:
 # https://github.com/37signals/pow/issues/268
