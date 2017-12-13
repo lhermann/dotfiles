@@ -2,12 +2,9 @@
 
 ## Install
 
-Clone this repo into `~/.dotfiles`:
+Clone this repo into `~/.dotfiles`, then install the dotfiles:
 
     git clone https://github.com/lhermann/dotfiles.git ~/.dotfiles
-
-Then install the dotfiles:
-
     cd .dotfiles
     rake
 
