@@ -44,10 +44,11 @@ nnoremap <leader>u :GundoToggle<CR>
 " open ack.vim
 nnoremap <leader>a :Ack
 " CtrlP settings
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+"let g:ctrlp_match_window = 'bottom,order:ttb'
+"let g:ctrlp_switch_buffer = 0
+"let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_working_path_mode = ""
+let g:ctrlp_max_files = 0
 
 " Launch Config
 """"""""""
