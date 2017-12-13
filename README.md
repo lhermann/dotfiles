@@ -5,7 +5,7 @@
 Clone this repo into `~/.dotfiles`, then install the dotfiles:
 
     git clone https://github.com/lhermann/dotfiles.git ~/.dotfiles
-    cd .dotfiles
+    cd ~/.dotfiles
     rake
 
 This rake task will not replace existing files, but it will replace existing symlinks.
