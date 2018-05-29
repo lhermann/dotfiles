@@ -10,7 +10,7 @@ export HISTCONTROL=ignoredups
 export TERM="screen-256color"
 
 # Extend PATH for npm local cli's
-export PATH="$PATH:./node_modules/.bin:.composer/vendor/bin:./bundle/bin"
+export PATH="$PATH:./node_modules/.bin:.composer/vendor/bin:./bin"
 
 # Pow shouldn't hide errors in non-ASCII apps:
 # https://github.com/37signals/pow/issues/268
