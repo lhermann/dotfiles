@@ -113,7 +113,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
-# default editor vor virsh
-export EDITOR=vim
