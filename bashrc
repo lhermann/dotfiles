@@ -60,10 +60,8 @@ parse_git_branch () {
     git branch --show-current 2> /dev/null | xargs echo " on"
 }
 
-export PS1='\e[1;31m\u\e[m in \e[0;34m\w\e[m\e[0;32m$(parse_git_branch)\e[m \e[0;90m// $(date "+%H:%M:%S")\e[m'$'\n$ '
-
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m \e[0;34m\w\e[0;32m$(parse_git_branch)\e[m \e[0;90m// $(date "+%H:%M")\e[m\n\[\0    33[01;35m\]\\$ \[\033[00m\]'
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m \e[0;34m\w\e[0;32m$(parse_git_branch)\e[m \e[0;90m// $(date "+%H:%M")\e[m'$'\n$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
