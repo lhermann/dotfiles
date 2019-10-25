@@ -56,16 +56,17 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+parse_git_branch () {
+  branch=`git branch --show-current 2> /dev/null`
+  [ ! -z "$branch" ] && echo "on $branch"
+}
+
 if [ "$color_prompt" = yes ]; then
-        PS1="${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m@\[\033[01;36m\]\h \e[0;49;94m\w \e[0;32m\$(parse_git_branch)\e[m \e[0;90m// \$(date '+%H:%M')\e[m\n\[\033[01;35m\]\\$ \[\033[00m\]"
+        PS1="${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m@\[\033[01;36m\]\h \e[0;49;94m\w \e[0;32m`parse_git_branch`\e[m \e[0;90m// `date '+%H:%M'`\e[m\n\[\033[01;35m\]\\$ \[\033[00m\]"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
-
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/on \1/'
-}
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
