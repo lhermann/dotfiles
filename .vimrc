@@ -3,7 +3,7 @@ set encoding=utf-8
 
 " Colorst
 """"""""""
-colorscheme molokai     " awesome colorscheme
+"colorscheme molokai     " awesome colorscheme
 syntax enable           " enable syntax processing
 
 "Spaces & Tabs
