@@ -52,7 +52,6 @@ let g:ctrlp_max_files = 0
 
 " Launch Config
 """"""""""
-call pathogen#infect()                      " use pathogen
 
 " allows cursor change in tmux mode
 if exists('$TMUX')

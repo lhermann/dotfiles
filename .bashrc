@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m \e[0;34m\w \e[0;90m// $(date "+%H:%M")\e[m'$'\n$ '
+    PS1="${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\e[1;90m@\[\033[01;36m\]\h \e[0;49;94m\w \e[0;90m// \$(date '+%H:%M')\e[m\n\[\033[01;35m\]\\$ \[\033[00m\]"
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
 fi
 unset color_prompt force_color_prompt
 
@@ -92,11 +92,11 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash/aliases.sh ]; then
-    . ~/.bash/aliases.sh
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
-if [ -f ~/.bash/env.sh ]; then
-    . ~/.bash/env.sh
+if [ -f ~/.bash_env ]; then
+    . ~/.bash_env
 fi
 
 # enable programmable completion features (you don't need to enable
